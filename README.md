@@ -1,6 +1,27 @@
 mathjax-single-file
 ===================
 
+# SGY Modifications
+
+* Added new configuration for generating MML+TeX to SVG 
+* Removed MathJax npm install
+* Added wget download for MathJax to ensure we are getting the same version that this system was developed for
+* Added md5 validation for downloaded mathjax archive
+
+## Building
+
+Download or clone this project then install dependencies:
+
+`npm install`
+
+Then build the specific version. Schoology is using MMLTeXSVG
+
+`grunt MMLTeXSVG`
+
+This will produce a minified, and non-minified file within the `dist` directory.
+
+# Original Notes
+
 An **experimental** MathJax build as a single file.
 
 This built offers two example configurations -- MMMLSVG, TeXSVG -- providing
